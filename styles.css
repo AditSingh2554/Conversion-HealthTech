@@ -224,17 +224,9 @@ nav ul li a:hover {
   position: relative;
 }
 
-#clients-animation {
-  position: absolute;
-  right: -12rem;
-  top: -7.5rem;
-  width: 120px;
-  rotate: z 90deg;
-}
-
 #why-us {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
@@ -411,6 +403,36 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+
+    #hero-img {
+        width: 75%;
+        height: 75%;
+    }
+
+    nav ul {
+        align-items: center;
+        margin-left: 4%;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    #why-us div {
+        padding: 4px;
+    }
+
+    #cht-logo {
+        position: absolute;
+        left: 5px;
+        top: 22px;
+    }
+    
+   #experience-team, #tailored-approach, #client-satisfaction, #global-research {
+      font-size: 20px;
+   }
+}
 
 @media (min-width: 1200px) {
     #hero-img {
