@@ -32,7 +32,13 @@ nav {
   max-width: 1200px;
   margin: 15px auto;
   padding: 14px 32px;
-  background: rgba(30, 30, 30, 0.85);
+  background: radial-gradient(circle at center,
+    rgba(229, 110, 177, 0.35),
+    rgba(120, 60, 255, 0.45),
+    rgba(60, 110, 255, 0.35),
+    rgb(30, 30, 63)
+);
+
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -89,6 +95,16 @@ nav ul li a:hover {
   width: 420px;
 }
 
+#hero-img {
+  width: 400px; /* adjust if needed */
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Zoom slightly on hover */
+#hero-img:hover {
+  transform: scale(1.05);
+}
+
 #hero-text {
   max-width: 520px;
 }
@@ -105,6 +121,26 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Icon smooth transition */
+.logo span {
+  display: inline-block;
+  font-size: 32px;
+  transition: transform 1s ease-in-out;
+}
+
+/* Rotate icon when hovering the whole h1 */
+.logo:hover span {
+  transform: rotate(360deg);
+}
+
+
 #mabf {
   font-size: 14px;
   letter-spacing: 2px;
@@ -117,6 +153,8 @@ nav ul li a:hover {
   line-height: 1.05;
   margin-bottom: 30px;
 }
+
+
 
 #read-more {
   background: #fff;
@@ -299,6 +337,22 @@ nav ul li a:hover {
 #flower-gif {
   width: 380px;
 }
+
+#flower-gif {
+  width: 300px; /* adjust size if needed */
+  animation: rotateFlower 22s linear infinite;
+}
+
+/* Rotation animation */
+@keyframes rotateFlower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 /* =====================
    CONTACT SECTION

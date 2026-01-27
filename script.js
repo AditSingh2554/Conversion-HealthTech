@@ -26,3 +26,7 @@ const readMoreCard = document.getElementById("read-more-card");
 readMoreCard.addEventListener("click", () => {
   readMoreCard.classList.toggle("fixed");
 });
+
+setTimeout(() => {
+  document.querySelector(".typewriter").classList.add("done");
+}, 2500);
